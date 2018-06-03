@@ -10,20 +10,18 @@
 
 // Do not edit the code below.
 var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
+  color: "red",
+  make: "toyota",
+  model: "tacoma",
   year: 1994
-}
+};
 // Do not edit the code above.
 
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-
-
+const { color, make, model, year } = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -33,15 +31,13 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
+function greeting(obj) {
+  const { firstName, lastName, title } = obj;
+
   // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+  return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -53,10 +49,6 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
-
-
-
 ////////// PROBLEM 4 //////////
 
 /*
@@ -67,9 +59,17 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
-
-
+function ingredients(obj) {
+  var arr = [];
+  var obj = {
+    carb: "",
+    fat: "",
+    protein: ""
+  };
+  const { carb, fat, protein } = obj;
+  arr.push(obj);
+  return arr;
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -87,8 +87,6 @@ function greeting( obj ) {
 
 //Code Here
 
-
-
 ////////// PROBLEM 6 //////////
 
 /*
@@ -96,7 +94,3 @@ function greeting( obj ) {
   The object properties will be named a, b, and c and their values will be arrays of numbers.
   Find the longest array and return that array.
 */
-
-//Code Here
-
-
